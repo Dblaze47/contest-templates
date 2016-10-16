@@ -46,7 +46,7 @@ using namespace std::chrono;
 #define endl pf("\n")
 #define SET(x_ , i_) memset((x_), (i_), sizeof(x_))
 #define STOI(_s, x) istringstream ss (_s); ss >> x;
-#define splf(d_, n)  fixed<<setprecision(d_)<<n
+#define PSLF(d_, n)  cout<<fixed<<setprecision(d_)<<n<<endl;
 
 /* LOOPS :*/
 #define loop(a , n_) for(i = (a); i < n; i++)
@@ -109,7 +109,6 @@ void SOLUTION()
 //    for(i = 1; i <= T; ++i)
     {
         CASE(i);
-        PS(i);
         NL;
     }
 
