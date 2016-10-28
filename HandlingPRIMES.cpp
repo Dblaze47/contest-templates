@@ -8,7 +8,9 @@ typedef unsigned long long ULL;
 const int SiSZ = 1e6;
 int num[SiSZ+10], primes[79000];
 
-void sieve(){  /* This is the Sieve of Eratosthenes, it's using the modified discarding method to filter out all the primes between 1 & 10^6. */
+// The following is the Sieve of Eratosthenes, using the modified discarding method, 
+//and filter out all the primes between 1 & 10^6.
+void sieve(){  
     LL sqrtN;
     sqrtN = sqrt((double) SiSZ);
     int i, j;
@@ -31,7 +33,9 @@ void sieve(){  /* This is the Sieve of Eratosthenes, it's using the modified dis
     return;
 }
 
-int divisors(LL n){                    /* This function determines the number of divisors of a number. We can also slightly alter it to factorize the number and find the prime factors. */
+// The following function determines the number of divisors of a number:
+// [We can also slightly alter it to factorize the number and find the prime factors.]
+int divisors(LL n){                    
     LL N = n, sqrtN = sqrt((double)n);
     int i, cnt = 1, x = 0;
     for (i = 0; primes[i]<=sqrtN; i++){
