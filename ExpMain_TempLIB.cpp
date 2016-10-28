@@ -17,11 +17,8 @@ Template Purpose: For general contest & speed testing.*/
 #include <sstream>
 #include <algorithm>
 #include <fstream>
-#include <chrono>
 #include <bitset>
-#include <unordered_map>
 using namespace std;
-using namespace std::chrono;
 
 #define pf printf
 #define sf scanf
@@ -40,10 +37,9 @@ using namespace std::chrono;
 
 
 /* FOR OUTPUT : */
-#define CASE(i_) pf("Case %d: ", i_)
-#define PS(t_) cout << t_ << endl
 #define NL pf("\n")
 #define endl pf("\n")
+#define PS(t_) cout << t_ << endl
 #define SET(x_ , i_) memset((x_), (i_), sizeof(x_))
 #define STOI(_s, x) istringstream ss (_s); ss >> x;
 #define PSLF(d_, n)  cout<<fixed<<setprecision(d_)<<n<<endl;
@@ -65,7 +61,6 @@ typedef map<int,int> MPII;
 typedef map<string,int> MPSI;
 typedef map<string,string> MPSS;
 typedef map<int,bool> MPIB;
-typedef unordered_map<int,int> UNMP;
 typedef stringstream SS;
 typedef priority_queue<int> PQMX;
 typedef priority_queue<int , vector<int> , greater<int>> PQMN;
@@ -103,13 +98,12 @@ using namespace MANOSH;
 
 void SOLUTION()
 {
-    int i, T;
+    int Case = 1, T;
     RI(T);
-//    while(T--)
-//    for(i = 1; i <= T; ++i)
+    while(T--)
     {
-        CASE(i);
-        NL;
+        
+      pf("Case %d: %d", Case++, ans);  
     }
 
 }
@@ -123,7 +117,6 @@ SAMPLE INPUTS:
 
 int main () {
     SOLUTION();
-
     return 0;
 }
 
