@@ -1,6 +1,5 @@
-# contest-templates
-C++ contest templates
-
+# Contest-Templates
+MY C++ Contest Templates:
 It contains my primary template for problem solving, along with a few others for handling exceptional types of problems:
 
 
