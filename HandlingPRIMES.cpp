@@ -34,7 +34,7 @@ void sieve(){
 }
 
 // The following function determines the number of divisors of a number:
-// [We can also slightly alter it to factorize the number and find the prime factors.]
+// [We can also slightly alter it to find the prime factors.]
 int divisors(LL n){                    
     LL N = n, sqrtN = sqrt((double)n);
     int i, cnt = 1, x = 0;
