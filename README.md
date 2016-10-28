@@ -5,5 +5,5 @@ It contains my primary template for problem solving, along with a few others for
 
 Addition 1: Contest Template [file: ExpMain_TempLIB].
 
-Addition 2: Template for Seive of Eratosthenes, factorization and counting no. of divisors [file: HandlingPRIMES].
+Addition 2: Template for Sieve of Eratosthenes, factorization and counting no. of divisors [file: HandlingPRIMES].
 
