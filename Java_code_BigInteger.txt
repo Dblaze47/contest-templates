@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.math.BigInteger;
+import java.util.Scanner;
+ 
+public class Solution
+{
+    static BigInteger factorial(int N)
+    {
+        BigInteger ans = new BigInteger("1");
+        for (int i = 2; i <= N; i++)
+            ans = ans.multiply(BigInteger.valueOf(i));
+ 
+        return ans;
+    }
+ 
+    public static void main(String args[]) throws Exception
+    {
+        Scanner reader = new Scanner(System.in);
+        int N = reader.nextInt();
+        System.out.println(factorial(N));
+    }
+}
