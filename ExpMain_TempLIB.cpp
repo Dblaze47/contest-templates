@@ -1,6 +1,7 @@
 /*Contestant Name: Manosh Talukder
 Template Purpose: For general contest & speed testing.*/
 #include <iostream>
+#include <algorithm>
 #include <cmath>
 #include <ctime>
 #include <cstdio>
@@ -15,7 +16,6 @@ Template Purpose: For general contest & speed testing.*/
 #include <vector>
 #include <string>
 #include <sstream>
-#include <algorithm>
 #include <fstream>
 #include <bitset>
 using namespace std;
@@ -34,7 +34,7 @@ using namespace std;
 #define RFL(d_) sf("%lf", &d_)
 #define GOT(s_) getline(cin , s)
 #define FGET(st_, n_) fgets(st_, n_, stdin)
-
+#define RF() freopen("in.txt", "r", stdin);
 
 /* FOR OUTPUT : */
 #define NL pf("\n")
@@ -43,6 +43,7 @@ using namespace std;
 #define SET(x_ , i_) memset((x_), (i_), sizeof(x_))
 #define STOI(_s, x) istringstream ss (_s); ss >> x;
 #define PSLF(d_, n)  cout<<fixed<<setprecision(d_)<<n<<endl;
+#define WF() freopen("out.txt", "w", stdout);
 
 /* LOOPS :*/
 #define loop(a , n_) for(i = (a); i < n; i++)
