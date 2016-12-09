@@ -42,6 +42,7 @@ using namespace std;
 #define PS(t_) cout << t_ << endl
 #define SET(x_ , i_) memset((x_), (i_), sizeof(x_))
 #define STOI(_s, x) istringstream ss (_s); ss >> x;
+#define ITOS(s_, x)  stringstream ss; ss << x; s_ = ss.str();
 #define PSLF(d_, n)  cout<<fixed<<setprecision(d_)<<n<<endl;
 #define WF() freopen("out.txt", "w", stdout);
 
