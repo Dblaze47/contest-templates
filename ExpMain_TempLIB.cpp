@@ -32,7 +32,7 @@ using namespace std;
 #define RLL(n_) sf("%lld", &n_)
 #define RCH(a_) sf("%c", &a_)
 #define RFL(d_) sf("%lf", &d_)
-#define GOT(s_) getline(cin , s)
+#define GOT(s_) getline(cin , s_)
 #define FGET(st_, n_) fgets(st_, n_, stdin)
 #define RF() freopen("in.txt", "r", stdin);
 
@@ -41,8 +41,8 @@ using namespace std;
 #define endl pf("\n")
 #define PS(t_) cout << t_ << endl
 #define SET(x_ , i_) memset((x_), (i_), sizeof(x_))
-#define STOI(_s, x) istringstream ss (_s); ss >> x;
-#define ITOS(s_, x)  stringstream ss; ss << x; s_ = ss.str();
+#define STOI(_s, x) 
+#define ITOS(s_, x)  #define DTOS(s_, d) 
 #define PSLF(d_, n)  cout<<fixed<<setprecision(d_)<<n<<endl;
 #define WF() freopen("out.txt", "w", stdout);
 
@@ -86,9 +86,13 @@ template <class T> inline void SWAP(T& a, T& b){a = a^b; b = a^b; a = a^b;}
 
 inline int GCD(int a, int b){if(b == 0) return a; return GCD(b, a % b);}
 inline int LCM(int a, int b){return ((a*b)/GCD(a, b));}
-inline void FXS(char ch[], int len){if(ch[len-1]!='\0'){ch[len-1] = '\0'; len--;} return len;}
 inline int REVN(int n){int rem = 0, rev = 0; while(n){rem = n % 10; rev = (rev * 10) + rem; n /= 10;} return rev;}
+inline void FXS(char ch[], int len){if(ch[len-1]!='\0'){ch[len-1] = '\0'; len--;} return len;}
 
+inline void ITOS(string &s_, int &x_){stringstream ss; ss << x_; s_ = ss.str();} 
+inline void STOI(string &s_, int &x_){istringstream ss (_s); ss >> x_;}
+inline void DTOS(string &s_, double &d_){ostringstream strs; strs << d_; s_ = strs.str();}
+    
 inline bool CKPR(int n){int i; LL sqrtN = root(n); for(i = 2; i < sqrtN; i++){if(n % i == 0){break;}} return (i == n);}
 inline bool SPAL(string s){int i,j; for (i= 0, j = s.size()-1; i < j; i++ , j--){if (s[i] == s[j]) continue; else break;} return (i >= j);}
 inline bool IPAL(int n){int rev= 0, bu = n; while(bu){rev = ( bu % 10 ) + rev * 10; bu /= 10;} return rev == n;}
